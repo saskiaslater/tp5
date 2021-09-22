@@ -1,0 +1,92 @@
+/* this is mobile-first CSS for 3 rows */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block; 
+  width: 100vw;
+  padding: 1vw;
+}
+  
+h1 {
+  font-family: "Cookbook Title";
+  color: Orange;
+  font-size: 50px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: Hurson;
+}
+
+ul, ol {
+  margin-top: 0;
+}
+
+.copyright {
+  font-family: Arial;
+  color: green;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#ingredients {
+  font-family: Calibri;
+  color: brown;
+  font-size: 20px;
+  background-color: lightgray;
+}
+
+#equipment {
+  font-family: Calibri;
+  color: brown;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+
+#directions {
+  font-family: Calibri;
+  color: brown;
+  font-size: 20px;
+  background-color: lightgray;
+}
+
+.pasta {
+  font-weight: bold;
+}
+
+.lastdirection {
+  font-style: italic;
+}
+
+.strainer {
+  font-style: oblique;
+}
+
+
+/* responsive design */
+
+@media (orientation: landscape) {
+  
+  div {
+    width: calc(100vw/3 - 1vw);
+    float: left;
+  }
+  
+ 
+  }
+
+@media screen and (max-width: 575px) {
+  li {
+    font-size: calc(125%);
+    transition: 1s
+  }
+}
